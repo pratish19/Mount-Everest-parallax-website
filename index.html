@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>education website</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <section>
+        <img src="./Images/bg.jpg" id="bg">
+        <h2 id="text">Mount Everest</h2>
+        <img src="./Images/man.png" id="man">
+        <img src="./Images/clouds_1.png" id="clouds1">
+        <img src="./Images/clouds_2.png" id="clouds2">
+        <img src="./Images/mountain_left.png" id="mountain_left">
+        <img src="./Images/mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Mount Everest</h2>
+        <ol>
+            <li>Everest is a massive 8848 meters tall - just below the cruising height of a jumbo jet!</li>
+            <p>The mighty Mount Everest was first measured in 1856 at 8840m tall. The height was then adjusted to 8848m in 1955, which is still the official height stated by the Nepalese government. However, there is a discrepancy as the Chinese declare the height of Mount Everest as 8844m.
+
+                Scientists are currently in the process of remeasuring the world’s tallest mountain, especially as it is thought the height might have changed following the 2015 earthquake. This work should be completed by 2020.</p>
+            <li>Everest is over 60 million years old.</li>
+            <p>
+                The mountain was formed when India’s continental plate crashed into Asia. India’s plate pushed under Asia and raised a huge mass of land upwards, creating the world’s highest mountain rage; the spectacular Himalayas.
+            </p>
+            <li> Mount Everest grows approximately 44 millimetres every year.</li>
+            <p>This occurs because of the continuous shift of tectonic plates, pushing the Himalayas upwards.</p>
+            <li>Mount Everest isn’t actually the tallest mountain on the planet.</li>
+            <p>This title is owned by Mauna Kea, which is a massive 10,200 meters tall. However, the majority of Mauna Kea resides below sea level. Mount Everest is the highest peak in the world, above sea level.</p>
+            <li>We are pronouncing Mount Everest incorrectly.</li>
+            <p>Everest was first recognised by the western world in 1841 by Sir George Everest and was called Peak 15. The name Mount Everest was then introduced in 1865, in honour of Sir George Everest, and therefore should be pronounced ‘Eve-rest’ not ‘Ever-est’ – as per the pronunciation of the British surveyor’s surname.
+
+                Everest was originally named Sagarmatha by the Nepalese, meaning ‘Goddess of the Sky’. Whilst the Tibetans call it Chomolungma, meaning ‘Goddess Mother of Mountains’. The peak is a sacred place, and requires all mountaineers to ask for permission and safe passage before attempting to summit. This is called the puja ceremony, taking place at Everest Base Camp prior to setting foot on the mountain.</p>
+            <li>Edmund Hillary might not have been the first person to summit Mount Everest.</li>
+            <p>The first successful summit of Mount Everest was recorded on May 29, 1953 by Sir Edmund Hillary from New Zealand. He was accompanied by Tenzing Norgay – a Sherpa from Nepal. However, some believe that the summit of Mount Everest was conquered much earlier.
+
+                Climbers George Mallory and Andrew Irvine attempted to summit Mount Everest back in 1924, however were last seen on July 8 of that year, just below the summit, making their way upwards. The pair were then never seen again - It is unknown as to whether the pair made it to the summit or not. For a full history of Everest summit attempts.</p>
+            <li>It can cost between £25,000 to £70,000 to climb Mount Everest.</li>
+            <p>The average cost of climbing this famous peak is around £50,000, depending on the level of support required.</p>
+            <li>Kami Rita Sherpa holds the record for the most successful summits at 24.</li>
+            <p>Kami Sherpa’s most recent ascent was in May 2019. Mountain guide Lhakpa Sherpa currently holds the record for the greatest number of successful summits by a woman at a very impressive 9.
+
+                A total of 5294 different adventurers have summited Mount Everest whilst 1211 of these (mostly Sherpas) have summited the mountain multiple times. 2018 was a record year for Mount Everest summits, with an immense 802 recorded.</p>
+            <li>It takes approximately 39-40 days to summit Everest.</li>
+            <p>This does not include the time spent trekking to Everest Base Camp, which can take 10-14 days. The reason it takes so long to summit Everest is so that the body can adjust to the extreme altitude – on the summit there is only a third of the amount of oxygen available compared to at sea level. Climbers normally use bottled oxygen to help them withstand the effects of extreme altitude.</p>
+            <li>The fastest Everest summit was recorded in just 10 hours 56 minutes.</li>
+            <p>Lakpa Gelu Sherpa climbed the South Side of the mountain in Nepal, from Base Camp to the top of Everest in a record time of 10 hours and 56 minutes in 2003.</p>
+        </ol>
+        <br>
+        <hr>
+        <br>
+        <h3>About</h3>
+        <br>
+        <a href="./about.html"><img src="./Images/contact.png" alt="contact" width="30" height="30"></a>
+        <a href="https://github.com/pratish19"><img src="./Images/github.png" alt="github" width="30" height="30"></a>
+        <a href="https://www.linkedin.com/in/pratish-sharma-2b349b250/"><img src="./Images/linkedinr.png" alt="linkedin" width="30" height="30"></a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+        
+        
+        
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#mountain right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -100,
+        });
+
+        gsap.to("#clouds2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+
+    </script>
+</body>
+</html>
